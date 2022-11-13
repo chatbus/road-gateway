@@ -14,6 +14,6 @@ COPY --from=build /opt/src/target/road-gateway.jar /opt/app.jar
 
 ENV SPRING_PROFILES_ACTIVE local
 
-EXPOSE 8761
+EXPOSE 8080
 
 ENTRYPOINT ["java","-jar","/opt/app.jar"]
